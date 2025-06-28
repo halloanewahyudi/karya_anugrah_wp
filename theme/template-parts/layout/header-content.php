@@ -14,7 +14,7 @@
 		<?php if(has_custom_logo(  )): ?> 
 			<div class="flex items-center gap-2">
 				<?php the_custom_logo(); ?>
-				<?php echo '<h4 class="hidden md:block text-xl text-brand"><a href="' . esc_url( home_url( '/' ) ) . '">' . get_bloginfo( 'name', 'display' ) . '</a></h4>'; ?>
+				
 			</div>
 		
 		<?php else: ?>
