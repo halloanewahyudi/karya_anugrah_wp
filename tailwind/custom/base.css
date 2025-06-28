@@ -1,0 +1,30 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ */
+
+/**
+ * This uses the background and foreground colors declared in the `theme.json`
+ * file and is applied both to the front end and in the block editor.
+ */
+body {
+	@apply bg-background text-foreground font-sans;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    @apply font-sans font-bold text-gray-950;
+}
+/* p{
+    @apply pb-7 leading-[1.6];
+} */
+
+.btn{
+    @apply py-2.5 rounded-full px-6 bg-gradient-to-r from-brand to-brand-900 text-white font-semibold hover:bg-brand-900 duration-300 hover:ring-2 hover:ring-brand-600 hover:ring-offset-2 ;
+}
+.btn-secondary{
+    @apply py-2.5 rounded-full px-6 bg-gradient-to-r from-secondary to-secondary-600 text-brand font-semibold hover:bg-secondary duration-300 hover:ring-2 hover:ring-secondary-600 hover:ring-offset-2 ;
+}
+
+.btn-outline{
+    @apply py-2.5 rounded-full px-6 border border-brand text-brand font-semibold hover:bg-brand hover:text-white duration-300 hover:ring-2 hover:ring-brand-600 hover:ring-offset-2 ;
+}

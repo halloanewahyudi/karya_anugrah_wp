@@ -1,0 +1,65 @@
+/*!
+Theme Name: karya_anugrah
+Theme URI: https://proweb.co.id
+Description: loremipsum dloretsitamet
+Version: 0.1.0
+Author: wahyudi
+Author URI: https://underscoretw.com/
+Text Domain: karya_anugrah
+Requires at least: 6.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+karya_anugrah is based on _tw https://underscoretw.com/, (C) 2021-2025 Greg Sullivan
+_tw is distributed under the terms of the GNU GPL v2 or later.
+
+_tw is based on Underscores https://underscores.me/ and Varia https://github.com/Automattic/themes/tree/master/varia, (C) 2012-2025 Automattic, Inc.
+Underscores and Varia are distributed under the terms of the GNU GPL v2 or later.
+*/
+
+.custom-logo{
+    @apply w-16 h-16;
+}
+.menu-primary-container{
+    @apply hidden lg:block absolute top-full left-0 w-full lg:relative lg:top-0 lg:left-auto lg:w-auto bg-white lg:bg-transparent p-6 lg:p-0;
+}
+
+
+.menu-item{
+    @apply  relative py-2;
+}
+.menu-item a{
+    @apply hover:text-brand-800 duration-300 ease-in-out;
+}
+/* .menu-item.menu-item-has-children .sub-menu{
+    @apply relative lg:absolute  lg:left-0 lg:top-16 hidden bg-white opacity-0 lg:w-52 duration-300 ease-in-out lg:p-4 lg:rounded-b-lg ; 
+}
+*/
+
+ 
+
+ .menu-item.menu-item-has-children .sub-menu {
+  @apply relative hidden bg-white opacity-0 transition-all duration-300 ease-in-out text-sm;
+
+  @apply lg:absolute lg:left-0 lg:top-16 lg:opacity-0 lg:w-52 lg:p-4 lg:rounded-b-lg;
+}
+
+.menu-item.menu-item-has-children:hover .sub-menu{
+    @apply lg:block lg:top-full opacity-100  duration-300 ease-in-out  lg:shadow-2xl ;
+}
+
+.menu-item.menu-item-has-children .sub-menu.open {
+  @apply block opacity-100 font-normal bg-brand-50 rounded-lg p-4 ;
+}
+.menu-item-has-children  a {
+    @apply flex items-center justify-between gap-2;
+}
+.menu-item-has-children > a::after{
+    content: '\F229';
+    font-family: "bootstrap-icons";
+    @apply text-xs;
+}
